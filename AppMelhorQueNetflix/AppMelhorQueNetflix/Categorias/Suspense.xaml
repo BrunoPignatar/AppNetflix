@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMelhorQueNetflix.Categorias.Suspense">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Black"
+>
+            <Image x:Name="img_logo" HeightRequest="100"/>
+
+            <ScrollView>
+
+                <Grid 
+                      ColumnDefinitions="*,*"
+                      RowDefinitions="300,300,300, 300">
+
+                    <ImageButton x:Name="btn_aforca"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Clicked="btn_aforca_Clicked"
+                               Aspect="Fill"
+                               BorderColor="Green"
+                               BorderWidth="4"/>
+
+                    <ImageButton x:Name="btn_ilhadomedo"
+                                 Grid.Row="0"
+                                 Grid.Column="1"
+                                 Clicked="btn_ilhadomedo_Clicked"
+                                 Aspect="Fill"
+                                 BorderColor="Green"
+                                 BorderWidth="4"/>
+
+                    <ImageButton x:Name="btn_fuja"
+                                 Grid.Row="1"
+                                 Grid.Column="0"
+                                 Clicked="btn_fuja_Clicked"
+                                 Aspect="Fill"
+                                 BorderColor="Green"
+                                 BorderWidth="4"/>
+
+                    <ImageButton x:Name="btn_vdevingança"
+                                 Grid.Row="1"
+                                 Grid.Column="1"
+                                 Clicked="btn_vdevingança_Clicked"
+                                 Aspect="Fill"
+                                 BorderColor="Green"
+                                 BorderWidth="4"/>
+
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
